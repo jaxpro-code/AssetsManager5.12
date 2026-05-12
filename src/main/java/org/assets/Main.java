@@ -15,7 +15,14 @@ public class Main{
         myAssets.add(car);
         myAssets.add(house);
 
-
+        for(Asset a: myAssets){
+            if(a instanceof House){
+                System.out.println(((House) a).getAddress());
+            }
+            if(a instanceof Vehicle){
+                System.out.println(((Vehicle) a).getMakeModel());
+            }
+        }
     }
 
 
