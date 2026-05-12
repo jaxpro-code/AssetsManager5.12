@@ -48,4 +48,24 @@ public class House extends Asset {
     }
     //</editor-fold>
 
+    @Override
+    public double getVaule(){
+        double vaule = 0;
+        switch(condition){
+            case 1:
+                vaule = squareFoot * 180 + (.25 * lotSize);
+                break;
+            case 2:
+                vaule = squareFoot * 130 + (.25 * lotSize);
+                break;
+            case 3:
+                vaule = squareFoot * 130 + (.25 * lotSize);
+                break;
+            case 4:
+                vaule = squareFoot * 130 + (.25 * lotSize);
+            default:
+                System.out.println("oh no!");
+        }
+        return vaule;
+    }
 }

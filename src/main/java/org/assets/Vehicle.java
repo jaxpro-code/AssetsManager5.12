@@ -38,7 +38,32 @@ public class Vehicle extends Asset {
     }
     //</editor-fold>
 
-
+@Override
+    public double getVaule(){
+        double value = 0;
+        switch(year){
+            case 1:
+                value = this.getOriginalCost() - (this.getOriginalCost() * .03);
+                break;
+            case 2:
+                value = this.getOriginalCost() - (this.getOriginalCost() * .06);
+                break;
+            case 3:
+                value = this.getOriginalCost() - (this.getOriginalCost() * .08);
+                break;
+            case 4:
+                value = 1000.00;
+                break;
+            default:
+                System.out.println("oh no!");
+        }
+            if(!getMakeModel().toLowerCase().contains("honda") && !getMakeModel().toLowerCase().contains("toyota")){
+                if(getOdometer()>= 100000){
+                    value = getVaule() - (getVaule() * .25);
+            }
+        }
+        return value;
+}
 
 
 }
