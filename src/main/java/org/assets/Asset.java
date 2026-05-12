@@ -1,6 +1,8 @@
 package org.assets;
 
 public class Asset {
+    //<editor-fold desc="Asset Constructor">
+
     private String description;
     private String dateAcquired;
     private double originalCost;
@@ -36,7 +38,8 @@ public class Asset {
     }
 
     public double getVaule(){
-        return getVaule();
-
+        return originalCost;
     }
+    // </editor-fold>
+
 }

@@ -1,6 +1,7 @@
 package org.assets;
 
 public class House extends Asset {
+    //<editor-fold desc="House Constructor">
     private String address;
     private int condition;
     private int squareFoot;
@@ -45,4 +46,6 @@ public class House extends Asset {
     public void setLotSize(int lotSize) {
         this.lotSize = lotSize;
     }
+    //</editor-fold>
+
 }
