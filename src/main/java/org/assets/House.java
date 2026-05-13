@@ -59,12 +59,14 @@ public class House extends Asset {
                 vaule = squareFoot * 130 + (.25 * lotSize);
                 break;
             case 3:
-                vaule = squareFoot * 130 + (.25 * lotSize);
+                vaule = squareFoot * 90 + (.25 * lotSize);
                 break;
             case 4:
-                vaule = squareFoot * 130 + (.25 * lotSize);
+                vaule = squareFoot * 80 + (.25 * lotSize);
+                break;
             default:
                 System.out.println("oh no!");
+                break;
         }
         return vaule;
     }
